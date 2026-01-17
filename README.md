@@ -12,22 +12,22 @@ MAGHFIRLI ALIF AL AYUBI
 2. Deskripsi Aplikasi
   Aplikasi yang dikembangkan merupakan aplikasi web sederhana yang dirancang dan diimplementasikan oleh kami dengan memperhatikan aspek keamanan sistem. Aplikasi ini dibuat sebagai studi kasus penerapan Secure Programming pada pengembangan aplikasi web.
   Teknologi yang Digunakan
-  •	PHP
-  •	MySQL
-  •	HTML
-  •	CSS
-  •	Apache (XAMPP)
+    •	PHP
+    •	MySQL
+    •	HTML
+    •	CSS
+    •	Apache (XAMPP)
 
-3. Struktur Repository
+4. Struktur Repository
   Repository GitHub digunakan sebagai media penyimpanan dan pengelolaan source code serta dokumen pendukung project. Adapun struktur repository pada project ini adalah sebagai berikut:
-  •	/SecProg
-  Folder ini berisi source code utama aplikasi web yang dikembangkan oleh kami, termasuk file backend, frontend, serta konfigurasi pendukung aplikasi.
-  •	/Report_Projek
-  Folder ini berisi bahan, catatan, dan draft dokumentasi yang digunakan sebagai dasar dalam penyusunan laporan Final Project.
-  •	/Report_Auditing_Projek_kelompok_lain
-  Folder ini berisi bahan presentasi serta hasil auditing dari kelompok lain .
+    •	/SecProg
+    Folder ini berisi source code utama aplikasi web yang dikembangkan oleh kami, termasuk file backend, frontend, serta konfigurasi pendukung aplikasi.
+    •	/Report_Projek
+    Folder ini berisi bahan, catatan, dan draft dokumentasi yang digunakan sebagai dasar dalam penyusunan laporan Final Project.
+    •	/Report_Auditing_Projek_kelompok_lain
+    Folder ini berisi bahan presentasi serta hasil auditing dari kelompok lain .
 
-4. Implementasi Secure Programming
+5. Implementasi Secure Programming
     Dalam proses pengembangan aplikasi, kami menerapkan beberapa konsep Secure Programming, antara lain:
     1.	Authentication dan Authorization
     Kami menerapkan mekanisme autentikasi dan otorisasi untuk memastikan bahwa hanya pengguna yang memiliki hak akses yang sesuai yang dapat menggunakan fitur tertentu       pada aplikasi.
@@ -40,7 +40,7 @@ MAGHFIRLI ALIF AL AYUBI
     5.	Pengamanan Database
     Akses dan pengolahan data pada database dilakukan dengan memperhatikan prinsip keamanan untuk meminimalisir risiko kebocoran data.
 
-5. Kesimpulan
+6. Kesimpulan
     Berdasarkan hasil pengembangan dan pengujian yang telah dilakukan, dapat disimpulkan bahwa Final Project ini telah berhasil menerapkan konsep-konsep Secure Programming pada pengembangan aplikasi web. Melalui project ini, kami memperoleh pemahaman yang lebih baik mengenai pentingnya keamanan dalam pengembangan sistem aplikasi.
 
 Link Repository GitHub:
