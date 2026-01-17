@@ -1,0 +1,258 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f9ff, #ebeff8);
+  margin: 0;
+  color: #2a2a2a;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #2a5298, #1e3c72);
+  color: white;
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: block;
+  transition: background 0.3s;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 30px;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1611095564986-d8cd03966ec1?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.table-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+  backdrop-filter: blur(5px);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.table-header h1 {
+  color: #1e3c72;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+button.action-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+button.action-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.btn-in {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+.btn-out {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+.btn-new {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+.search-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.search-row input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  flex: 1;
+}
+.search-row button,
+.search-row a {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.search-row button {
+  background: #2a5298;
+}
+.search-row a {
+  background: #aaa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-top: 15px;
+}
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background: #2a5298;
+  color: white;
+  text-align: left;
+}
+.status-ok {
+  color: #2ecc71;
+  font-weight: 600;
+}
+.status-warning {
+  color: #f39c12;
+  font-weight: 600;
+}
+.status-danger {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+}
+.badge.pending {
+  background: #f39c12;
+}
+.badge.approved {
+  background: #2ecc71;
+}
+.badge.rejected,
+.badge.cancelled {
+  background: #e74c3c;
+}
+
+a.cancel-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+}
+a.cancel-btn:hover {
+  opacity: 0.85;
+}
+
+.toast {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #2a5298;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.4s;
+}
+.toast.error {
+  background: #e74c3c;
+}
+.toast.success {
+  background: #27ae60;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  width: 420px;
+  max-width: 90vw;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+  color: #e74c3c;
+}
+.modal-content h2 {
+  text-align: center;
+  color: #1e3c72;
+  margin-top: 0;
+}
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+.modal-content button {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
